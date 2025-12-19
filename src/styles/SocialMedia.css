@@ -1,0 +1,31 @@
+.social {
+  background: linear-gradient(90deg, #ffffff 0%, #f1f8ff 100%);
+  padding: 60px 20px;
+}
+
+.social-container {
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.social-links-grid {
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.social-link {
+  display: inline-block;
+  padding: 12px 20px;
+  background: var(--primary);
+  color: white;
+  border-radius: 6px;
+  font-weight: 600;
+}
+
+.social-link:hover {
+  transform: translateY(-3px);
+}

@@ -1,0 +1,84 @@
+.impact {
+  background: linear-gradient(135deg, var(--accent) 0%, var(--accent-2) 100%);
+  color: white;
+  padding: 80px 20px;
+}
+
+.impact-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.impact-container h2 {
+  color: white;
+  margin-bottom: 10px;
+}
+
+.impact-intro {
+  text-align: center;
+  font-size: 1.2rem;
+  color: rgba(255, 255, 255, 0.9);
+  margin-bottom: 50px;
+}
+
+.impact-stories {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  margin-top: 40px;
+}
+
+.story-card {
+  background: rgba(255, 255, 255, 0.95);
+  color: #333;
+  border-radius: 10px;
+  padding: 40px 25px;
+  text-align: center;
+  transition: all 0.3s ease;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+}
+
+.story-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3);
+}
+
+.story-image-placeholder {
+  font-size: 4rem;
+  margin-bottom: 20px;
+  display: block;
+}
+
+.story-card h3 {
+  font-size: 1.5rem;
+  color: var(--accent-2);
+  margin-bottom: 15px;
+  font-weight: 700;
+}
+
+.story-card p {
+  font-size: 1rem;
+  color: #666;
+  line-height: 1.7;
+}
+
+@media (max-width: 1024px) {
+  .impact-stories {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .impact-stories {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .story-card {
+    padding: 30px 20px;
+  }
+
+  .story-image-placeholder {
+    font-size: 3.5rem;
+  }
+}
