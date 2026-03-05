@@ -1,4 +1,6 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
+import { FaFacebookF, FaTwitter, FaInstagram, FaLinkedinIn } from 'react-icons/fa';
 import '../styles/Footer.css';
 
 function Footer() {
@@ -13,10 +15,10 @@ function Footer() {
         <div className="footer-section">
           <h4>Quick Links</h4>
           <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#services">Services</a></li>
-            <li><a href="#impact">Impact</a></li>
+            <li><Link to="/">Home</Link></li>
+            <li><Link to="/about">About</Link></li>
+            <li><Link to="/projects">Projects</Link></li>
+            <li><Link to="/impact-of-social-initiatives">Impact</Link></li>
           </ul>
         </div>
 
@@ -30,10 +32,18 @@ function Footer() {
         <div className="footer-section">
           <h4>Follow Us</h4>
           <div className="social-links">
-            <a href="#facebook">Facebook</a>
-            <a href="#twitter">Twitter</a>
-            <a href="#instagram">Instagram</a>
-            <a href="#linkedin">LinkedIn</a>
+            <a href="https://facebook.com/umangfoundation" target="_blank" rel="noopener noreferrer" className="social-icon">
+              <FaFacebookF />
+            </a>
+            <a href="https://twitter.com/umangfoundation" target="_blank" rel="noopener noreferrer" className="social-icon">
+              <FaTwitter />
+            </a>
+            <a href="https://instagram.com/umangfoundation" target="_blank" rel="noopener noreferrer" className="social-icon">
+              <FaInstagram />
+            </a>
+            <a href="https://linkedin.com/company/umangfoundation" target="_blank" rel="noopener noreferrer" className="social-icon">
+              <FaLinkedinIn />
+            </a>
           </div>
         </div>
       </div>
